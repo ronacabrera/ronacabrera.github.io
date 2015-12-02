@@ -1,0 +1,519 @@
+body, html {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	-webkit-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+
+
+#container{
+	position: absolute;
+	font-family: 'Lato';
+	width: 100%;
+	height: 100%;
+}
+
+
+.header{
+	background-color: black;
+	width: 100%;
+	height: 120px;
+	position: relative;
+	display: block;
+}
+
+#home-container{
+	background-color: white;
+	display: inline-block;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	border-style: dotted;
+	border-color: white;
+	position: absolute;
+	left: 25px;
+	top: 20px;
+}
+
+#home-container:hover{
+    -webkit-filter: invert(100%);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#home-icon{
+	position: relative;
+	left: 4px;
+	top: 2px;
+}
+
+
+#header-text{
+	color: white;
+	margin: 0 auto;
+	font-family: 'Lato';
+	font-size: 40px;
+	font-weight: 500;
+	text-align: center;
+	padding: 30px;
+	display: block;
+
+}
+
+.info-containter{
+	display: block;
+	height: 100%;
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.home-tab{
+	color: black;
+	height: 100%;
+	width: 25%;
+	margin: 0 auto;
+	font-size: 30px;
+	float: left;
+	position: relative;
+}
+
+.home-tab:hover{
+	color: white;
+    transition: 0.6s;
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: 900;
+    z-index: 2;
+}
+
+#about-tab{
+	background-color: #F0F8FF;
+	height: 100%;
+}
+#resume-tab{
+	background-color: #7EC0EE;
+	height: 100%;
+}
+#portfolio-tab{
+	background-color: #ADD8E6;
+	height: 100%;
+}
+#contact-tab{
+	background-color: #53868B;
+	height: 100%;
+}
+
+
+#about-tab:hover{
+	background-color: black;
+}
+#resume-tab:hover{
+	background-color: black;
+}
+#portfolio-tab:hover{
+	background-color: black;
+}
+#contact-tab:hover{
+	background-color: black;
+}
+
+.tab-text {
+	text-align: center;
+	margin-top: 100%;
+	transform: translateY(-50%);
+  	position: relative;
+  	display: block;
+}
+
+.icons{
+	margin-top: 10%;
+	margin-right: 5%;
+	transform: translateY(-50%);
+  	position: relative;
+  	display: block;
+  	-webkit-filter: invert(0%);
+
+  	
+}
+
+/*To invert the colors of the icon when hovering over the home-tabs*/
+.icons-hover{
+	-webkit-filter: invert(100%);
+	transition: 0.6s;
+}
+
+
+/*Modal box*/
+#modal-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#modal-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#modal-box {
+    width: 500px;
+    height: 260px;
+    background-color: #5485BB;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 3%;
+
+
+}
+
+#modal-header{
+    color: white;
+    font-family: 'Playball';
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 50px;
+    display: block;
+}
+
+.button {
+	display: inline-block;
+    background-color: white;
+    font-family: 'Lato';
+    font-size: 40px;
+    font-weight: 700;
+    padding: 5px 15px;
+    color: #5485BB;
+    cursor: pointer;
+    border-radius: 2%;
+    margin-left: 34%;
+    margin-top: 10%;
+    border-style: solid;
+
+}
+
+.button:hover{
+	color: white;
+	background-color: slategrey;
+	border-style: solid;
+}
+
+/*Contact box*/
+#contact-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    display: none
+
+}
+#contact-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+#contact-box {
+    width: 500px;
+    height: 600px;
+    background-color: #5485BB;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 3%;
+
+}
+
+#contact-header{
+    color: white;
+    font-family: 'Playball';
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+    display: block;
+}
+
+#contact-info-area{
+	font-family: 'Lato';
+	color: white;
+	font-size: 20px;
+    text-align: center;
+    font-weight: 200;
+    margin-top: 10px;
+    display: inline-block;
+    border-style: solid;
+    padding: 10px;
+    margin-left: 18%;
+}
+
+#direct-msg{
+	color: white;
+    font-family: 'Playball';
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 40px;
+    display: block;
+}
+
+#contact-footer{
+	display: block;
+	margin-top: 10px;
+}
+
+#contact-text{
+	margin-left: 40px;
+	font-family: 'Lato';
+	color: #5485BB;
+	font-size: 10px;
+
+}
+
+.contact-button {
+	display: inline-block;
+    background-color: white;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 10px;
+    color: #5485BB;
+    cursor: pointer;
+    border-radius: 2%;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-style: solid;
+    float: right;
+}
+
+.contact-button:hover{
+	color: white;
+	background-color: slategrey;
+	border-style: solid;
+}
+
+#contact-submit{
+	display: inline-block;
+}
+#contact-cancel{
+	margin-right: 60px;
+	display: inline-block;
+}
+
+
+
+
+/*resume page*/
+
+
+
+.header-text-else{
+	color: white;
+	font-family: 'Lato';
+	font-size: 40px;
+	font-weight: 500;
+	text-align: center;
+	padding: 30px;
+	display: block;
+
+}
+
+#header-name{
+	color: white;
+	margin: 0 auto;
+	font-family: 'Lato';
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	padding: 10px;
+	display: block;
+	margin-top: -35px;
+}
+
+#contact-container-all{
+	background-color: white;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	border-radius: 20%;
+	border-style: dotted;
+	border-color: white;
+	position: absolute;
+	right: 25px;
+	top: 30px;
+}
+
+
+#contact-icon-all{
+	position: relative;
+	left: -15px;
+	top: -13px;
+}
+
+
+#contact-container-all:hover{
+    -webkit-filter: invert(100%);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+#resume-containter{
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	margin-top: 5%;
+}
+
+#resume-content{
+	background-color: white;
+	font-family: "Lato";
+	margin-left: 20%;
+	margin-right: 10%;
+	position: relative;
+}
+
+.resume-header{
+	border-bottom: solid #009999;
+	font-size: 20px;
+	font-style: 400;
+}
+
+.year{
+	position: absolute;
+	display: inline-block;
+	background-color: white;
+	margin-top: 20px;
+
+}
+
+#education-box{
+	display: inline-block;
+	background-color: white;
+	margin-left: 30%;
+	border-left: solid #009999;
+	margin-top: 15px;
+	padding: 10px;
+}
+
+
+.professional-box{
+	display: inline-block;
+	background-color: white;
+	margin-left: 30%;
+	border-left: solid #009999;
+	margin-top: 15px;
+	padding: 10px;
+
+}
+
+.resume-content-container{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.title{
+	display: inline-block;
+	font-size: 18px;
+	font-style: bold;
+	font-weight: 600;
+}
+
+.place{
+	display: block;
+}
+
+.details{
+	display: block;
+}
+
+#skill-details{
+	display: inline-block;
+	background-color: white;
+	margin-left: 30%;
+	border-left: solid #009999;
+	margin-top: 15px;
+}
+
+.honors-box{
+	display: inline-block;
+	background-color: white;
+	margin-left: 30%;
+	border-left: solid #009999;
+	margin-top: 15px;
+	padding: 10px;
+}
+
+#honors-container{
+	margin-bottom: 10%;
+}
+
+/*bullet points*/
+ul{ 
+	list-style: none; 
+}
+ul li{
+	list-style-image: url(../images/bullet.png); font-size:10pt;
+}
+
+
+/*side tab for resume*/
+
+#side-tab{
+	width: 18%;
+	position: fixed;
+	z-index: 99;
+	margin-top: 10%;
+}
+
+.side-button{
+	padding: 10px;
+	color: #009999;
+	font-size: 20px;
+	background-color: white;
+	border-style: solid;
+	border-color: #009999;
+	display: block;
+}
+
+.side-button:hover{
+	font-size: 22px;
+	color: white;
+	background-color: black;
+	border-style: solid;
+	border-color: black;
+	transition: 0.4s;
+    cursor: pointer;
+}
+
+
+/*About Page*/
+
+#about-containter{
+	display: block;
+	height: 518px;
+}
+
+#background {
+    background-size: 100% 100%;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 300; 
