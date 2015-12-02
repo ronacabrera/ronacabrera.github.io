@@ -60,6 +60,25 @@ $(document).ready(function(){
 	        'slow');
 	});
 
+	$("#intro-tab").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#about1").offset().top - 20},
+	        'slow');
+	});
+
+	$("#work-tab").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#about2").offset().top - 300},
+	        'slow');
+	});
+
+	$("#hobbies-tab").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#about3").offset().top - 500},
+	        'slow');
+	});
+
+
 	// HOMEPAGE HOVER so that icon appears
 
 	$("#about-tab").hover(

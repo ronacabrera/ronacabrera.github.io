@@ -8,7 +8,13 @@ body, html {
 	font-smoothing: antialiased;
 }
 
-
+html { 
+  background: url(../images/SFTOKYO.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 #container{
 	position: absolute;
@@ -166,7 +172,7 @@ body, html {
 #modal-box {
     width: 500px;
     height: 260px;
-    background-color: #5485BB;
+    background-color: slategrey;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -194,12 +200,13 @@ body, html {
     font-size: 40px;
     font-weight: 700;
     padding: 5px 15px;
-    color: #5485BB;
+    color: black;
     cursor: pointer;
     border-radius: 2%;
     margin-left: 34%;
-    margin-top: 10%;
+    margin-top: 7%;
     border-style: solid;
+    border-color: black;
 
 }
 
@@ -207,6 +214,7 @@ body, html {
 	color: white;
 	background-color: slategrey;
 	border-style: solid;
+	border-color: white;
 }
 
 /*Contact box*/
@@ -230,7 +238,7 @@ body, html {
 #contact-box {
     width: 500px;
     height: 600px;
-    background-color: #5485BB;
+    background-color: slategrey;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -293,19 +301,21 @@ body, html {
     font-size: 20px;
     font-weight: 700;
     padding: 5px 10px;
-    color: #5485BB;
+    color: black;
     cursor: pointer;
     border-radius: 2%;
     margin-top: 10px;
     margin-left: 10px;
     border-style: solid;
     float: right;
+    border-color:black;
 }
 
 .contact-button:hover{
 	color: white;
 	background-color: slategrey;
 	border-style: solid;
+	border-color:white;
 }
 
 #contact-submit{
@@ -375,19 +385,23 @@ body, html {
 
 
 #resume-containter{
-	background-color: white;
+	background-color: none;
 	height: 100%;
 	width: 100%;
 	position: relative;
 	margin-top: 5%;
+	color: white;
 }
 
 #resume-content{
-	background-color: white;
+	background-color: black;
 	font-family: "Lato";
 	margin-left: 20%;
 	margin-right: 10%;
 	position: relative;
+	padding: 10px;
+	opacity: 0.8;
+	margin-bottom: 10%;
 }
 
 .resume-header{
@@ -399,14 +413,14 @@ body, html {
 .year{
 	position: absolute;
 	display: inline-block;
-	background-color: white;
+	background-color: black;
 	margin-top: 20px;
 
 }
 
 #education-box{
 	display: inline-block;
-	background-color: white;
+	background-color: black;
 	margin-left: 30%;
 	border-left: solid #009999;
 	margin-top: 15px;
@@ -416,7 +430,7 @@ body, html {
 
 .professional-box{
 	display: inline-block;
-	background-color: white;
+	background-color: black;
 	margin-left: 30%;
 	border-left: solid #009999;
 	margin-top: 15px;
@@ -446,7 +460,7 @@ body, html {
 
 #skill-details{
 	display: inline-block;
-	background-color: white;
+	background-color: black;
 	margin-left: 30%;
 	border-left: solid #009999;
 	margin-top: 15px;
@@ -454,7 +468,7 @@ body, html {
 
 .honors-box{
 	display: inline-block;
-	background-color: white;
+	background-color: black;
 	margin-left: 30%;
 	border-left: solid #009999;
 	margin-top: 15px;
@@ -487,16 +501,17 @@ ul li{
 	padding: 10px;
 	color: #009999;
 	font-size: 20px;
-	background-color: white;
+	background-color: black;
 	border-style: solid;
 	border-color: #009999;
 	display: block;
+	opacity: 0.8;
 }
 
 .side-button:hover{
 	font-size: 22px;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: white;
 	border-style: solid;
 	border-color: black;
 	transition: 0.4s;
@@ -507,13 +522,151 @@ ul li{
 /*About Page*/
 
 #about-containter{
+	font-family: "Lato";
+	position: absolute;
 	display: block;
-	height: 518px;
+	height: 100%;
+	width: 100%;
 }
 
-#background {
-    background-size: 100% 100%;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    z-index: 300; 
+#about-box-containter{
+	margin-top: 5%;
+	position: relative;
+    z-index: 200; 
+    margin-left: 20%;
+    margin-right: 10%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 80;
+    color: white;
+    padding: 30px;
+    margin-bottom: 5%;
+}
+
+#about-box-scroll{
+	opacity: 1;
+	z-index: 99;
+}
+
+.about-content-box{
+	display: inline-block;
+}
+
+.about-pic-container{
+	display: inline-block;
+	margin-left: 10px;
+	position: relative;
+	top: 10px;
+}
+
+.about-info{
+	display: inline-block;
+	margin-left: 35%;
+	position: relative;
+	top: -200px;
+
+}
+
+
+
+.about-title{
+	font-family: "Playball";
+	font-size: 40px;
+	font-weight: 400;
+}
+
+#intro-tab{
+	color: white;
+	border-color: white;
+}
+
+#intro-tab:hover{
+	color: black;
+	border-color: black;
+}
+
+#work-tab{
+	color: white;
+	border-color: white;
+}
+
+#work-tab:hover{
+	color: black;
+	border-color: black;
+}
+
+#hobbies-tab{
+	color: white;
+	border-color: white;
+}
+
+#hobbies-tab:hover{
+	color: black;
+	border-color: black;
+}
+
+
+
+/*ABOUT*/
+
+#portfolio-container{
+	width: 100%;
+	height: 100%;
+}
+
+#portfolio-box{
+	margin-left: 20%;
+    margin-right: 20%;
+    background-color: black;
+    opacity: 0.7;
+
+}
+
+
+#info-box2{
+	position: relative;
+	top: -220px;
+}
+#port-title{
+	font-size: 50px;
+	font-family: "Playball";
+	text-align: center;
+	color: white
+}
+
+.about-pic-container{
+	border-width: 15px;
+	z-index: 200;
+
+}
+
+
+#about-pic1{
+	background-image: url(../images/selfie.jpg);
+}
+
+#about-pic2{
+	background-image: url(../images/gap.png);
+}
+
+#about-pic3{
+	background-image: url(../images/illustrator5.jpg);
+}
+
+#about-pic1:hover{
+    background-image: url(../images/selfie2.jpg);
+    transition: 0.6s;
+    z-index: 300;
+}
+
+#about-pic2:hover{
+    background-image: url(../images/popsugar.png);
+    transition: 0.6s;
+    z-index: 300;
+}
+
+#about-pic3:hover{
+    background-image: url(../images/illustrator6.jpg);
+    transition: 0.6s;
+    z-index: 300;
+}
